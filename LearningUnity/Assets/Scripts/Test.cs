@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Test : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class Test : MonoBehaviour
             cube.AddForce(Vector3.up*200);
         // Adds Velocity to object
             cube.velocity = Vector3.forward * 2f;    
+        }
+
+        if(Input.GetKeyDown(KeyCode.K)){
+            SceneManager.LoadScene("Level2");
         }
     }
 
