@@ -13,7 +13,10 @@ public class Test : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Destroys gameObject on pressing Space
+        if(Input.GetKeyDown(KeyCode.Space)){
+            Destroy(gameObject);
+        }
     }
 
     private void OnMouseDown(){
